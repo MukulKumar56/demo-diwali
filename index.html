@@ -128,7 +128,7 @@ let createWishing = () => {
 let send_msg = () => {
     let sender_name = document.querySelector(".show-name");
       
-         let url = window.location.pathname + '?by=' + sender_name
+         let url = window.location.origin + '?by=' + sender_name
  
  
     let msg = ` *${sender_name}* has sent a diwali gift :) => ${url} `
