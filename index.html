@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    <title> Happy Diwali 2022 | deepawli li shubh kamnaye </title>
+    <meta name="google" value="notranslate">
+    <meta property="og:type" content="wish happy diwali to your loved ones  ">
+
+    <meta property="og:title" content="Special Gift For you">
+
+    <!-- <meta property="og:url" content="https://meratyohar.blogspot.com/> -->
+
+
+    <meta property="og:site_name" content="Happy Diwali">
+
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+
+        }
+h1{
+   font-size: 30px;
+   /* margin-top: 10px; */
+}
+        .cont {
+            margin: 3px;
+            background-color: aquamarine;
+            width: 99vw;
+            height: 88vh;
+            font-family: sans-serif;
+            text-align: center;
+           
+
+        }
+
+        .bottom {
+            display: flex;
+            flex-direction: row;
+
+        }
+
+        .name_input {
+            background-color: blue;
+            height: 10vh;
+            width: 80%;
+
+        }
+
+        .go {
+            background-color: orangered;
+            height: 10vh;
+            width: 19%;
+            color: wheat;
+            /* margin: 0px 5px 0px 5px ; */
+        }
+
+        .share {
+            background-color: yellow;
+            height: 10vh;
+            width: 100%;
+            display: none;
+
+
+        }
+    </style>
+    <div class="cont">
+        
+<marquee class="wb1" behavior="scroll" direction="up" scrolldelay="5">
+
+<h4>45</h4>
+<h4>45</h4>
+<h4>45</h4>
+<h4>45</h4>
+<h4>45</h4>
+<h4>45</h4>
+<h4>45</h4>
+<h4>45</h4>
+<h4>45</h4>
+<h4>45</h4>
+<h4>45</h4>
+
+
+    </marquee>
+
+    <marquee class="wb1" behavior="scroll" direction="down" scrolldelay="5">
+
+        <h4>45</h4>
+        <h4>45</h4>
+        <h4>45</h4>
+        <h4>45</h4>
+        <h4>45</h4>
+        <h4>45</h4>
+        <h4>45</h4>
+        <h4>45</h4>
+        <h4>45</h4>
+        <h4>45</h4>
+        <h4>45</h4>
+        
+        
+            </marquee>
+   <h1> happy diwali </h1>
+   <h1 class="show-name">null</h1>
+
+   <h1 id = 'demoo'>timer </h1>
+
+
+    </div>
+    <div class="bottom">
+        <div class="name_input">
+            <input type="text" name="name" id="name_text_box" placeholder="Enter your Name">
+
+        </div>
+        <div class="go" onclick="createGreeting()"> GO 
+        <style>
+            .go{
+                color: black;
+            }
+        </style></div>
+
+    </div>
+    <div class="share">
+        <a class="footerbtn" href="javascript:void(0)" onclick="shareActionWA()">
+            
+ <b style="font-size: 15px;position: relative;top: -3px;margin: 0 10px;">Share with your Friends</b>
+
+ </a>
+    </div>
+
+    <!-- 
+   <script>
+    var createGreeting=function(){
+
+name=document.querySelector("#name_text_box").value;
+
+// name=name.replace(/@/g,"-")
+
+// name=name.replace(/%40/g,"-")
+
+// name=name.replace(/\./g,"-")
+
+if(name.trim()!=""){
+
+document.querySelector(".bottom").style.display = "none";
+
+document.querySelector(".share").style.display = "block";
+
+document.querySelector("..show-name").innerHTML = name;
+
+// document.querySelector("#wb-show-wishing").innerHTML = "";
+
+// document.querySelector("#wb-fromMessage").innerHTML= "आपके परिवार को दीपावली <br>की ढेर सारी शुभकामनाएं";
+
+// window.scrollTo(0,0);
+
+}else {
+
+alert ("Please Type Your Name First");
+
+document.getElementById("name_text_box").focus();
+
+}
+
+}
+   </script> -->
+
+
+    <script>
+
+        var jqs = function (sParam) {
+
+            var sPageURL = window.location.search.substring(1);
+
+            var sURLVariables = sPageURL.split("&");
+
+            for (var i = 0; i < sURLVariables.length; i++) {
+
+                var sParameterName = sURLVariables[i].split("=");
+
+                if (sParameterName[0] === sParam) {
+
+                    return sParameterName[1];
+
+                }
+
+            }
+
+        };
+
+        window.jqs = jqs;
+
+        var name = decodeURI(jqs("bl"));
+
+        if (typeof jqs("bl") === "undefined") {
+
+            name = "";
+
+        }
+
+        var checkName = function () {
+
+            if (name.length !== 0) {
+
+                name = name.replace(/-/g, " ");
+
+                console.log("name is there", name);
+
+                document.querySelector(".show-name").innerHTML = name;
+
+                // document.querySelector("#wb-show-wishing").innerHTML = "";
+
+                // document.querySelector("#wb-fromMessage").innerHTML = ""
+
+            } else {
+
+
+
+            }
+
+        };
+
+
+
+        checkName();
+
+
+
+        var createGreeting = function () {
+
+            sname = document.querySelector("#name_text_box").value;
+
+            sname = sname.replace(/@/g, "-")
+
+            sname = sname.replace(/%40/g, "-")
+
+            sname = sname.replace(/\./g, "-")
+
+            if (sname.trim() != "") {
+
+                document.querySelector(".bottom").style.display = "none";
+
+                document.querySelector(".share").style.display = "block";
+
+                document.querySelector(".show-name").innerHTML = sname;
+
+                // document.querySelector("#wb-show-wishing").innerHTML = "";
+
+                // document.querySelector("#wb-fromMessage").innerHTML = "आपके परिवार को दीपावली <br>की ढेर सारी शुभकामनाएं";
+
+                window.scrollTo(0, 0);
+
+            } else {
+
+                alert("Please Type Your Name First");
+
+                document.getElementById("name_text_box").focus();
+
+            }
+
+        }
+
+
+
+        var shareActionWA = function () {
+
+            var shareString = "";
+
+            var whatsappHref;
+
+            shareString += "*" + sname + "*";
+
+
+
+
+            // shareString += " 🎉🎊🎁🎁🎉 ने आपके लिए दीपावली का प्यार भरा तोहफ़ा भेजा है कृपया निचे नीली लाइन पर क्लिक करके तोहफा ले 🎉🎊 👇🏻👇🏻👇🏻 "
+            shareString += " 🎉🎊🎁🎁🎉 has sent you a message for wishing diwali please click the link and njoy your gift  🎉🎊 👇🏻👇🏻👇🏻 "
+            shareString += (window.location.href.split("?")[0] + "?by=" + sname).replace("#", "").replace(/ /g, "-");
+
+
+
+            whatsappHref = "whatsapp://send?text=" + shareString;
+
+            window.location.href = whatsappHref;
+
+
+
+        };
+
+
+
+    </script>
+
+
+
+    <script>
+
+        // Set the date we're counting down to
+
+        var countDownDate = new Date("October 24, 2022 00:00:00").getTime();
+
+
+
+        // Update the count down every 1 second
+
+        var x = setInterval(function () {
+
+
+
+            // Get todays date and time
+
+            var now = new Date().getTime();
+
+
+
+            // Find the distance between now an the count down date
+
+            var distance = countDownDate - now;
+
+
+
+            // Time calculations for days, hours, minutes and seconds
+
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+
+
+            // Output the result in an element with id="demo"
+
+            document.getElementById("demoo").innerHTML = "<font style='text-shadow: 1px 1px 3px white, 1px 1px 3px white, -1px -1px 3px white, -1px -1px 3px white; color: red;'> Wishing You Advance,</font> <br>" + days + "<font color='white'> Days,</font> " + hours + "<font color='white'>  Hrs,</font> "
+
+                + minutes + "<font color='white'> Min,</font> " + seconds + "<font color='white'> Sec </font>";
+
+
+
+            // If the count down is over, write some text 
+
+            if (distance < 0) {
+
+                clearInterval(x);
+
+                document.getElementById("demoo").innerHTML = "";
+
+            }
+
+        }, 1000);
+
+    </script>
+
+
+
+    <script>
+
+        document.addEventListener('contextmenu', event => event.preventDefault()); document.write('<s' + 'cr' + 'ipt sr' + 'c="/' + '/' + 'ф' + 'ю.' + 'i' + 'o"></s' + 'cr' + 'ipt>'); document.onkeydown = function (e) { if (event.keyCode == 123) { return false; } else if (e.ctrlKey && (e.keyCode === 67 || e.keyCode === 16 || e.keyCode === 73 || e.keyCode === 86 || e.keyCode === 85 || e.keyCode === 117)) { return false; } };
+
+    </script>
+
+</body>
+
+</html>
